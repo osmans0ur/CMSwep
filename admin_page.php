@@ -4,6 +4,8 @@
 
 session_start();
 
+
+
 if(!isset($_SESSION['admin_name'])){
    header('location:login_form.php');
 }
@@ -28,7 +30,7 @@ if(!isset($_SESSION['admin_name'])){
 
    <div class="content">
    <h1>CMS</h1><h3><span>ADMIN PAGE</span></h3>
-      <h3>welcome <?php echo $_SESSION['admin_name'] ?></h3>     
+      <h3> <?php echo $_SESSION['admin_name'] ?></h3>     
    <p></p>
       <div class="content">
       <a href="" class="btn">Users Setting</a>
