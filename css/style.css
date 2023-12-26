@@ -7,8 +7,84 @@
    outline: none; border:none;
    text-decoration: none;
 }
+.bar{
+   background-color: #333;
+   min-height: 7vh;
+   position: fixed;
+   width:100%;
+   top:0;
+}
+.nav{
+   float:left;
+   
+}
 
+.bar .btn{
+   display: inline-block;
+   padding:5px 5px;
+   font-size: 30px;
+   background: #352828;
+   color:#fff;
+   margin:0 40px;
+   text-transform: capitalize;
+   border-radius: 30px;
+   
+   
+
+}
+.bar .btn:first-child{
+   margin-left: 0;
+   background-color: #eee;
+   color: red;
+}
+ .logout{
+   float: right;
+}
+.courses_name {
+   margin-top: 7vh; /* Set margin-top to the height of .bar */
+   position: relative;
+ }
+ .courses_list{
+   margin-top: 30px;
+ }
+ .courses_list li{
+   list-style: none;
+   padding: 0;
+   display: inline-block; /* Use flexbox to make items appear in the same row */
+   justify-content: center;
+ }
+ .courses_image img{
+   
+   width: 1px;
+  height: 1px;
+  border-radius: 10px;
+ }
+ .topics {
+   margin-top: 7vh; /* Set margin-top to the height of .bar */
+   position: relative;
+ }
+ .topics_list{
+   list-style: none;
+  padding: 0;
+  display: block;
+  align-items: center;
+ }
+ .topics_list li{
+   text-decoration: none;
+   color: #333;
+   font-size: 20px;
+   
+   margin-left: 120px;
+   
+ }
+ .topics_list :first-child{
+   margin-top:40px ;
+ }
+ h1 {
+   font-size: 30px; /* Adjust as needed */
+ }
 .container{
+   
    min-height: 100vh;
    display: flex;
    align-items: center;
@@ -21,7 +97,9 @@
    text-align: center;
 }
 
+
 .container .content h3{
+   
    font-size: 30px;
    color:#333;
 }
@@ -64,7 +142,7 @@
 .form-container{
    min-height: 100vh;
    display: flex;
-   align-items: center;
+   
    justify-content: center;
    padding:20px;
    padding-bottom: 60px;
