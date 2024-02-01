@@ -1,0 +1,11 @@
+<!-- templates/topics_page.html -->
+{% extends 'base_generic.html' %}
+
+{% block header %}{{ course.name }} Topics{% endblock %}
+
+{% block content %}
+    <h2>{{ course.name }} Topics</h2>
+    {% for topic in topics %}
+        <a href="{% url 'youtube_results_page' topic.id %}">{{ topic.name }}</a><br>
+    {% endfor %}
+{% endblock %}
